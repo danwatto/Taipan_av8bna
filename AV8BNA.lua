@@ -670,13 +670,13 @@ end, 1, "External Aircraft Model", "Weight ON Wheels Tail Gear")
 local function getComm1Text()
 	if parse_indication(5) == nil then return (" "):rep(2) end
 	local txt = parse_indication(5)["ufc_chnl_1_m"] or parse_indication(5)["ufc_chnl_1_v"] or ""
-	return (" "):rep(2 - #txt) .. txt
+	return (" "):rep(2 - #txt) .. txt:sub(3,4)  -- Dan Taipan changed txt to txt:sub(3,4) - preset is in last 2 chars of 4 char string
 end
 defineString("UFC_COMM1_DISPLAY", getComm1Text, 2, "UFC", "UFC Comm1 Preset Display")
 local function getComm2Text()
 	if parse_indication(5) == nil then return (" "):rep(2) end
 	local txt = parse_indication(5)["ufc_chnl_2_m"] or parse_indication(5)["ufc_chnl_2_v"] or ""
-	return (" "):rep(2 - #txt) .. txt
+	return (" "):rep(2 - #txt) .. txt:sub(3,4)  -- Dan Taipan changed txt to txt:sub(3,4) - preset is in last 2 chars of 4 char string
 end
 defineString("UFC_COMM2_DISPLAY", getComm2Text, 2, "UFC", "UFC Comm2 Preset Display")
 

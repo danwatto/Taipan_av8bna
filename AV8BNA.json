@@ -4654,7 +4654,7 @@
                                                                                    "category": "HUD Control",
                                                                                "control_type": "selector",
                                                                                 "description": "HUD Symbology Reject Switch NORM/REJ1/REJ2",
-                                                                                 "identifier": "HUD_SYMBOL",
+                                                                                 "identifier": "HUD_SYM_REJ_SW",
                                                                                      "inputs": [ {
                                                                                                    "description": "switch to previous or next state",
                                                                                                      "interface": "fixed_step"

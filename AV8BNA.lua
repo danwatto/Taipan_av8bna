@@ -76,7 +76,7 @@ definePotentiometer("EDP_BRIGHT", 20, 3272, 272, {0, 1},"Engine Display", "EDP B
 defineToggleSwitch("EDP_BIT", 20, 3655, 655, "Engine Display", "EDP BIT Button")
 
 -- HUD Control Panel
-defineMultipositionSwitch("HUD_SYMBOL", 22, 3288, 288, 3, 0.5, "HUD Control", "HUD Symbology Reject Switch NORM/REJ1/REJ2")
+defineMultipositionSwitch("HUD_SYM_REJ_SW", 22, 3288, 288, 3, 0.5, "HUD Control", "HUD Symbology Reject Switch NORM/REJ1/REJ2")
 definePotentiometer("HUD_BRIGHT", 22, 3289, 289, {0, 1},"HUD Control", "HUD Off/Brightness Control")
 defineMultipositionSwitch("HUD_MODE", 22, 3290, 290, 3, 0.5, "HUD Control", "HUD Display Mode Switch DAY/AUTO/NIGHT")
 definePotentiometer("HUD_VIDEO_BRIGHT", 22, 3291, 291, {0, 1},"HUD Control", "HUD Video Brightness Control")
